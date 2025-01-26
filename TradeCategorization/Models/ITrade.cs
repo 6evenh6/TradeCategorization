@@ -11,6 +11,6 @@ namespace TradeCategorization.Models
         double Value { get; }
         string ClientSector { get; }
         DateTime NextPaymentDate { get; }
-
+        bool IsPoliticallyExposed { get; }
     }
 }
