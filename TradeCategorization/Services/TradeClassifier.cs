@@ -13,8 +13,7 @@ public class TradeClassifier
         {
             { "EXPIRED", IsExpired },
             { "HIGHRISK", IsHighRisk },
-            { "MEDIUMRISK", IsMediumRisk },
-            { "PEP", IsPEP }
+            { "MEDIUMRISK", IsMediumRisk }
         };
     }
 
@@ -44,9 +43,5 @@ public class TradeClassifier
     private bool IsMediumRisk(ITrade trade)
     {
         return trade.Value > 1000000 && trade.ClientSector == "Public";
-    }
-    private bool IsPEP(ITrade trade)
-    {
-        return trade.IsPoliticallyExposed;
     }
 }
