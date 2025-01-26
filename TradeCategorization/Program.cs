@@ -30,5 +30,10 @@ class Program
             string category = classifier.ClassifyTrade(trade);
             Console.WriteLine(category);
         }
+
+        Console.ForegroundColor = ConsoleColor.Cyan; // Altera a cor do texto para Ciano
+        Console.WriteLine("PARA VISUALIZAR A RESPOSTA DA QUESTÃO 2, LEIA O FINAL DO ARQUIVO README.md NO GITHUB!!!");
+        Console.ResetColor(); // Reseta a cor do texto para a padrão
+
     }
 }
