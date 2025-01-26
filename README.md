@@ -39,10 +39,10 @@ MEDIUMRISK
 
 ## Resposta da Questão 2
 
-Para implementar a categoria **PEP** (Politically Exposed Person), basta adicionar uma nova verificação no classificador de trades. 
-A interface `ITrade` precisa ser atualizada com uma propriedade booleana chamada `IsPoliticallyExposed`, assim, ao classificar um trade, se a propriedade `IsPoliticallyExposed` for `true`, a categoria "PEP" será atribuída ao trade. 
-Essa lógica deve ser adicionada como uma verificação adicional, antes das outras categorias, para garantir que o trade seja corretamente classificado como "PEP" quando aplicável.
-OBS: o PEP deve ser adicionado no Dicionário junto as outras funcionalidades, a implementação do dicionário é a adoção de um padrão de desing chamado Chain of Responsability.
+Para implementar a categoria **PEP** (Politically Exposed Person), basta adicionar uma nova verificação no classificador de trades.   
+A interface `ITrade` precisa ser atualizada com uma propriedade booleana chamada `IsPoliticallyExposed`, assim, ao classificar um trade, se a propriedade `IsPoliticallyExposed` for `true`, a categoria "PEP" será atribuída ao trade.  
+Essa lógica deve ser adicionada como uma verificação adicional, antes das outras categorias, para garantir que o trade seja corretamente classificado como "PEP" quando aplicável.  
+OBS: o PEP deve ser adicionado no Dicionário junto as outras funcionalidades, a implementação do dicionário é a adoção de um padrão de desing chamado Chain of Responsability.  
 
 
 
